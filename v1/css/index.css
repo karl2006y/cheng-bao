@@ -1,0 +1,328 @@
+/*import font*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+#top {
+  width: 100vw;
+  height: 150vh;
+  text-align: center;
+  color: white;
+  background-image: url(../pic/背景網頁.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+/* navbar排版 */
+
+.logo img {
+  height: 63px;
+  width: 150px;
+}
+#hamburger {
+  position: absolute;
+  right: 22px;
+  top: 36px;
+}
+#hamburger .line {
+  transition: 0.8s;
+  transform-origin: 78%;
+}
+#hamburger.open #i1 {
+  transform: rotate(-45deg);
+}
+#hamburger.open #i2 {
+  transform: rotate(45deg);
+}
+.line {
+  height: 3px;
+  width: 15px;
+  background-color: white;
+  margin: 3px;
+}
+.main_nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00000030;
+  padding: 10px 25px;
+}
+
+.main_nav nav {
+  width: vw;
+  transition: height 1s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  height: 25vh;
+}
+nav.fadeOutUp {
+  height: 0;
+}
+.fadeOutUp li {
+  display: none;
+}
+.nav_item {
+  margin: 18px;
+}
+.nav_item a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* 結束navbar排版 */
+/* banner的字排版 */
+#banner_text {
+  width: 92vw;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  transform: translate(-20%, -50%);
+  border-style: solid;
+  border-width: 5px;
+  padding: 12px;
+}
+/* 動畫 */
+.animated.slow8 {
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+}
+.animated.veryslow {
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+}
+
+/* 宇宙人排版 */
+#astro {
+  position: absolute;
+  width: 38vw;
+  left: 28vw;
+  top: 400px;
+}
+/* 星球們排版 */
+#p1 {
+  width: 17.37vw;
+  position: absolute;
+  top: 200px;
+  left: -1.9vw;
+  /* margin-left: -25px; */
+  transform: rotate(-15deg);
+}
+#p2 {
+  width: 21vw;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 100px;
+  right: -10vw;
+}
+#p3 {
+  position: absolute;
+  top: 800px;
+  right: 12vw;
+  width: 12vw;
+  transform: rotate(-20deg);
+}
+#p4 {
+  width: 14vw;
+  position: absolute;
+  top: 950px;
+  left: 28vw;
+  transform: rotate(-30deg);
+}
+#p5 {
+  position: absolute;
+  top: -120px;
+  right: 32vw;
+  width: 12.5vw;
+  transform: rotate(0deg);
+}
+#p6 {
+  position: absolute;
+  top: 1800px;
+  left: 42vw;
+  width: 10.5vw;
+  transform: rotate(-20deg);
+}
+#p7 {
+  position: absolute;
+  top: 2050px;
+  right: 5vw;
+  width: 14vw;
+  transform: rotate(0deg);
+}
+#p8 {
+  position: absolute;
+  top: 2600px;
+  left: 28vw;
+  width: 12.5vw;
+  transform: rotate(0deg);
+}
+#p9 {
+  position: absolute;
+  top: 3400px;
+  right: 4vw;
+  width: 14vw;
+  transform: rotate(0deg);
+}
+
+/* 文案排版 */
+.box {
+  height: max-content;
+  width: 1200px;
+  background-color: white;
+  display: flex;
+  margin: auto;
+  margin-top: 250px;
+}
+.box_text {
+  margin: 25px;
+}
+.box_title {
+  margin: 30px;
+  text-align: center;
+}
+.intro {
+  width: 31.5vw;
+  height: 21vw;
+  background-color: #f5f5f6;
+  box-shadow: 1px 1px 8px grey;
+  margin: 30px;
+}
+.intro h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+}
+.intro p {
+  font-size: 16px;
+  font-style: normal;
+  padding: 20px;
+}
+.box_img {
+  height: 28vw;
+  width: 28vw;
+  overflow: hidden;
+  margin: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.box_img img {
+  height: 83vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*最後一個關於課程的box*/
+.box .course {
+  width: 83vw;
+  height: 550px;
+  background-color: #f5f5f6;
+  box-shadow: 1px 1px 8px grey;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.course .course_box_title {
+  padding: 30px;
+  font-size: 30px;
+}
+.course_item {
+  width: 83vw;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+}
+.course_item .item {
+  flex-grow: 1;
+  margin: 0 5px;
+}
+.course_item .item .item_img img {
+  width: 150px;
+  height: 150px;
+}
+.course_item .item .item_text h3 {
+  margin: 15px;
+}
+.course_item .item .item_text p {
+  margin-top: 10px;
+}
+/*footer*/
+.main_footer .container {
+  max-width: 100%;
+  background-color: #393939;
+  color: white;
+}
+.footer_top {
+  width: 83vw;
+  display: flex;
+  margin: auto;
+}
+.footer_title {
+  flex-grow: 1;
+  font-size: 20px;
+  padding: 10px;
+}
+.footer_top nav {
+  flex-grow: 1;
+  padding: 10px;
+  margin-left: 250px;
+}
+.footer_top nav a {
+  color: #fccc9d;
+  padding-left: 20px;
+}
+.footer_bottem {
+  width: 83vw;
+  display: flex;
+  margin: auto;
+}
+.contect_block {
+  display: flex;
+  color: white;
+  margin-left: 150px;
+}
+.contect_block a {
+  color: white;
+  margin-left: 20px;
+}
+.contect_block p {
+  color: white;
+  margin-left: 20px;
+}
+@media (min-width: 576px) {
+  .logo {
+    margin-right: 8vw;
+  }
+  .main_nav nav.fadeIn {
+    height: 5vh;
+  }
+  .main_nav nav.fadeOutUp {
+    height: 5vh;
+  }
+  .fadeIn li {
+    display: block;
+  }
+  .fadeOutUp li {
+    display: block;
+  }
+
+  #banner_text {
+    width: max-content;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    border-style: solid;
+    border-width: 5px;
+    padding: 12px;
+  }
+}

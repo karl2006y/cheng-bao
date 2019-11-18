@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="./v1/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <title>程堡兒童程式教育團隊</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="top">
+        <div
+          class="main_nav d-sm-flex justify-content-sm-center d-block fixed-top"
+        >
+          <a href="#" class="logo"
+            ><img src="./v1/pic/logo_white.png" alt="logo"
+          /></a>
+          <div
+            @click="menuOpen = !menuOpen"
+            id="hamburger"
+            class="d-block d-sm-none"
+            :class="menuOpen?'open':''"
+          >
+            <div class="line" id="i1"></div>
+            <div class="line" id="i2"></div>
+          </div>
+          <nav class="animated " :class="menuOpen?'fadeIn':'fadeOutUp'">
+            <li class="nav_item"><a href="./程式學堂.html">程式學堂</a></li>
+            <li class="nav_item"><a href="./課程簡介.html">課程簡介</a></li>
+            <li class="nav_item"><a href="./常見問題.html">常見問題</a></li>
+            <li class="nav_item"><a href="./講師招募.html">講師招募</a></li>
+            <li class="nav_item"><a href="./聯絡我們.html">聯絡我們</a></li>
+            <li class="nav_item"><a href="./關於我們.html">關於我們</a></li>
+          </nav>
+        </div>
+        <div id="banner_text">
+          <h1>程式教學</h1>
+          <h1>邀請你一同加入我們！</h1>
+        </div>
+      </div>
+      <div class="sec d-none d-sm-block">
+        <div class="container container">
+          <div class="box">
+            <div class="box_text">
+              <div class=" box_title"><h1>我們是誰？來自哪裡！</h1></div>
+              <div class=" intro">
+                <h2>文案文案文案文案文案文案</h2>
+                <p>
+                  文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文文文案案文案案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+                </p>
+              </div>
+            </div>
+            <div class="box_img">
+              <img src="./v1/pic/box_img1.png" alt="box_img1" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="./v1/pic/box_img2.png" alt="box_img1" />
+            </div>
+            <div class="box_text">
+              <div class="box_title"><h1>我們在做什麼？</h1></div>
+              <div class="intro">
+                <h2>文案文案文案文案文案文案</h2>
+                <p>
+                  文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文文文案案文案案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_text">
+              <div class="box_title"><h1>實踐我們的目標</h1></div>
+              <div class="intro">
+                <h2>文案文案文案文案文案文案</h2>
+                <p>
+                  文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文文文案案文案案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案
+                </p>
+              </div>
+            </div>
+            <div class="box_img">
+              <img src="./v1/pic/box_img3.png" alt="box_img1" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="course">
+              <div class="course_box_title"><h1>現在有哪些課程？</h1></div>
+              <div class="course_item">
+                <div class="item">
+                  <div class="item_img">
+                    <img src="./v1/pic/flag.png" alt="入門基礎班" />
+                  </div>
+                  <div class="item_text">
+                    <h3>入門基礎班</h3>
+                    <p>輕鬆學習簡單入門</p>
+                    <p>適合零基礎的學生</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_img">
+                    <img src="./v1/pic/rocket.png" alt="入門基礎班" />
+                  </div>
+                  <div class="item_text">
+                    <h3>進階挑戰班</h3>
+                    <p>學習撰寫程式迴圈</p>
+                    <p>訓練加強邏輯思維</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_img">
+                    <img src="./v1/pic/badge.png" alt="入門基礎班" />
+                  </div>
+                  <div class="item_text">
+                    <h3>高階專題班</h3>
+                    <p>學員創意發想專題</p>
+                    <p>老師引導協助完成</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_footer d-none d-sm-block">
+        <div class="container">
+          <div class="footer_top">
+            <div class="footer_title"><h4>程堡兒童程式教育團隊</h4></div>
+            <nav>
+              <a href="./課程簡介.html">課程簡介</a
+              ><a href="./常見問題.html">常見問題</a
+              ><a href="./講師招募.html">講師招募</a
+              ><a href="./聯絡我們.html">聯絡我們</a
+              ><a href="./關於我們.html">關於我們</a>
+            </nav>
+          </div>
+          <div class="footer_bottem">
+            <p>主辦單位｜逢甲大學app教學團隊</p>
+            <p>指導單位｜逢甲大學通識教育中心</p>
+            <div class="contect_block">
+              <p>聯絡電話(04)-52005505</p>
+              <p>|</p>
+              <a href="#">Facebook粉絲專頁</a>
+              <p>|</p>
+              <a href="#">instagram專頁</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pic-element">
+        <img
+          class="animated infinite heartBeat slow8"
+          src="./v1/pic/宇宙人.png"
+          id="astro"
+          alt="astronaut"
+        /><img
+          class="animated infinite flash veryslow"
+          src="./v1/pic/星球1.png"
+          id="p1"
+          alt="planet1"
+        /><img
+          class="animated infinite flash veryslow delay-2s"
+          src="./v1/pic/星球2.png"
+          id="p2"
+          alt="planet2"
+        /><img
+          class="animated infinite flash veryslow delay-3s"
+          src="./v1/pic/星球3.png"
+          id="p3"
+          alt="planet3"
+        /><img
+          class="animated infinite flash veryslow delay-4s"
+          src="./v1/pic/星球4.png"
+          id="p4"
+          alt="planet4"
+        /><img
+          class="animated infinite flash veryslow delay-5s"
+          src="./v1/pic/星球5.png"
+          id="p5"
+          alt="planet5"
+        /><img
+          class="animated infinite flash veryslow"
+          src="./v1/pic/星球1.png"
+          id="p6"
+          alt="planet6"
+        /><img
+          class="animated infinite flash veryslow delay-2s"
+          src="./v1/pic/星球2.png"
+          id="p7"
+          alt="planet7"
+        /><img
+          class="animated infinite flash veryslow delay-3s"
+          src="./v1/pic/星球3.png"
+          id="p8"
+          alt="planet8"
+        /><img
+          class="animated infinite flash veryslow delay-4s"
+          src="./v1/pic/星球5.png"
+          id="p9"
+          alt="planet9"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./v1/script/index.js"></script>
+</html>
